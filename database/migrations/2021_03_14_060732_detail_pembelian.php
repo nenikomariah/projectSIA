@@ -15,6 +15,7 @@ class DetailPembelian extends Migration
     {
         Schema::create('detail_pembelian', function (Blueprint $table){
             $table->string('no_beli',14);
+            $table->string('kd_brg',5);
             $table->integer('qty_beli');
             $table->integer('sub_beli');
         });
